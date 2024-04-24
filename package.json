@@ -1,0 +1,22 @@
+{
+  "name": "curriculoexpress",
+  "version": "1.0.0",
+  "description": "curriculo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaomoraiss/curriculoExpress.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaomoraiss/curriculoExpress/issues"
+  },
+  "homepage": "https://github.com/joaomoraiss/curriculoExpress#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
