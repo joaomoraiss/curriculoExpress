@@ -1,4 +1,3 @@
-
 const db = require('./db');
 
 const getCurriculo = async (req, res) => {
@@ -20,7 +19,18 @@ const createCurriculo = async (req, res) => {
   }
 };
 
+const deleteCurriculo = async (req, res) => {
+  const id = req.params.id;
+  try {
+    await db.query('DELETE FROM curriculo WHERE id = $1', [id]);
+    res.json({ message: 'Currículo excluído com sucesso.' });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
 module.exports = {
   getCurriculo,
   createCurriculo,
+  deleteCurriculo
 };

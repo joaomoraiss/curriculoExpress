@@ -1,4 +1,3 @@
-// routes.js
 const express = require('express');
 const router = express.Router();
 const controller = require('./controller');
@@ -8,5 +7,6 @@ router.get('/', (req, res) => {
   });
 router.get('/curriculo', controller.getCurriculo);
 router.post('/criarCurriculo', controller.createCurriculo);
+router.delete('/deletarCurriculo/:id', controller.deleteCurriculo);
 
 module.exports = router;
